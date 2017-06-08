@@ -2,9 +2,7 @@
 subroutine rp1(maxmx,meqn,mwaves,maux,mbc,mx,ql,qr,auxl,auxr,wave,s,amdq,apdq)
 ! =============================================================================
 !
-! Riemann problems for the 1D Burgers' equation with entropy fix for 
-! transonic rarefaction. See "Finite Volume Method for Hyperbolic Problems",
-! R. J. LeVeque.
+! Riemann problems for the model equation from Kasimov's paper on chaos in shock! waves
 
 ! waves: 1
 ! equations: 1

@@ -50,7 +50,7 @@ MODULES = \
 
 SOURCES = \
   qinit.f \
-  jp1_burgers.f90 \
+  rp1_kasimov.f90 \
   src1.f \
 
 

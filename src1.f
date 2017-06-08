@@ -1,4 +1,5 @@
-
+! This is the non-localized source term for the model equation from Kasimov's 
+! paper about chaos in shockwaves
 c
 c
 c =========================================================
@@ -15,16 +16,16 @@ c
 c     # local storage:
       double precision :: beta
       double precision :: a
-      double precision :: alpha1
+      real :: alpha_1
       double precision :: us
       double precision :: sho
       beta = 0.1d0
       pi = 4.d0*datan(1.0d0)
-      !a= 1/(4*sqrt(4*pi*beta)*(1+erf(1.0d0/(2*sqrt(beta)))))\
-      alpha1 = 4
+   
+      alpha_1 = 4.5
       us =  q(1,mx+1)
       write(46,*) us
-      sho=(1.d0/us)**(4)
+      sho=(1.d0/us)**(alpha_1)
       
       
       
